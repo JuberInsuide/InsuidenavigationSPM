@@ -1,0 +1,52 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name InsuideIndoorNavigation
+import DeveloperToolsSupport
+import Foundation
+import IndoorAtlas
+@_exported import InsuideIndoorNavigation
+import MapboxMaps
+import Swift
+import SwiftUI
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public protocol AnalyticsProtocol {
+  func showWiseflyMapAnalyticData(analyticData: [Swift.String : Swift.String])
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class InsuideMapViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) public var delegateAnalytics: any InsuideIndoorNavigation.AnalyticsProtocol
+  @_Concurrency.MainActor(unsafe) public init(airportCode: Swift.String, delegateAnalytics: any InsuideIndoorNavigation.AnalyticsProtocol)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @objc deinit
+}
+@objc public protocol InsuideIndoorManagerDelegate {
+  @objc func indoorInsuideLocationManager(_ userFloor: Swift.Int, didUpdateLocations locations: [Any], locationAccuracy: Swift.Float)
+  @objc func indoorInsuideLocatioManager(didupateHeading trueHeading: Swift.Double)
+  @objc func didUpdateRoutePoints(route: IndoorAtlas.IARoute)
+  @objc optional func insuideIndoorShowOnMap(poiId: Swift.String)
+  @objc optional func indoorInsuideLocationManager(_ manager: IndoorAtlas.IALocationManager, didenter region: IndoorAtlas.IARegion)
+  @objc optional func indoorInsuideLocationManager(_ manager: IndoorAtlas.IALocationManager, didexit region: IndoorAtlas.IARegion)
+}
+@objc @_inheritsConvenienceInitializers open class InsuideIndoorManager : ObjectiveC.NSObject, IndoorAtlas.IALocationManagerDelegate {
+  public var delegete: (any InsuideIndoorNavigation.InsuideIndoorManagerDelegate)!
+  public static let shared: InsuideIndoorNavigation.InsuideIndoorManager
+  public func authenticationInsuideIndoor(apiKey: Swift.String, apiSeceret: Swift.String)
+  public func initializeInsuideIndoor()
+  public func stopLocation()
+  public func requestBlockFloor(latitude: Swift.Double, longitude: Swift.Double, floorNumber: Swift.Int)
+  @objc public func indoorLocationManager(_ manager: IndoorAtlas.IALocationManager, didUpdateLocations locations: [Any])
+  @objc public func indoorLocationManager(_ manager: IndoorAtlas.IALocationManager, didEnter region: IndoorAtlas.IARegion)
+  @objc public func indoorLocationManager(_ manager: IndoorAtlas.IALocationManager, didExitRegion region: IndoorAtlas.IARegion)
+  @objc public func indoorLocationManager(_ manager: IndoorAtlas.IALocationManager, didUpdate newHeading: IndoorAtlas.IAHeading)
+  public func fetchIARoute(destinationLat: Swift.Double, destinationLng: Swift.Double, floor: Swift.Int)
+  @objc public func indoorLocationManager(_ manager: IndoorAtlas.IALocationManager, didUpdate route: IndoorAtlas.IARoute)
+  public func insuideShowPoiOnMap(poiId: Swift.String, floorId: Swift.Int, poiLatitude: Swift.Double, poiLongitude: Swift.Double)
+  public func stopMonitoringWayFinding()
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension UIKit.UIFont {
+  public static let loadMyFonts: ()
+}

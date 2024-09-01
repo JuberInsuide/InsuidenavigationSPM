@@ -1,0 +1,6 @@
+framework module InsuideIndoorNavigation {
+  umbrella header "InsuideIndoorNavigation.h"
+  export *
+
+  module * { export * }
+}

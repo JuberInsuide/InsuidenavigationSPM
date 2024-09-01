@@ -1,0 +1,1787 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "InsuideIndoorNavigation",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MapboxMaps",
+        "printedName": "MapboxMaps",
+        "declKind": "Import",
+        "moduleName": "InsuideIndoorNavigation"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AnalyticsProtocol",
+        "printedName": "AnalyticsProtocol",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "showWiseflyMapAnalyticData",
+            "printedName": "showWiseflyMapAnalyticData(analyticData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23InsuideIndoorNavigation17AnalyticsProtocolP26showWiseflyMapAnalyticData08analyticJ0ySDyS2SG_tF",
+            "mangledName": "$s23InsuideIndoorNavigation17AnalyticsProtocolP26showWiseflyMapAnalyticData08analyticJ0ySDyS2SG_tF",
+            "moduleName": "InsuideIndoorNavigation",
+            "genericSig": "<τ_0_0 where τ_0_0 : InsuideIndoorNavigation.AnalyticsProtocol>",
+            "sugared_genericSig": "<Self where Self : InsuideIndoorNavigation.AnalyticsProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:23InsuideIndoorNavigation17AnalyticsProtocolP",
+        "mangledName": "$s23InsuideIndoorNavigation17AnalyticsProtocolP",
+        "moduleName": "InsuideIndoorNavigation",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "InsuideMapViewController",
+        "printedName": "InsuideMapViewController",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "delegateAnalytics",
+            "printedName": "delegateAnalytics",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnalyticsProtocol",
+                "printedName": "any InsuideIndoorNavigation.AnalyticsProtocol",
+                "usr": "s:23InsuideIndoorNavigation17AnalyticsProtocolP"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23InsuideIndoorNavigation0A17MapViewControllerC17delegateAnalyticsAA0H8Protocol_pvp",
+            "mangledName": "$s23InsuideIndoorNavigation0A17MapViewControllerC17delegateAnalyticsAA0H8Protocol_pvp",
+            "moduleName": "InsuideIndoorNavigation",
+            "declAttributes": [
+              "HasStorage",
+              "Custom",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnalyticsProtocol",
+                    "printedName": "any InsuideIndoorNavigation.AnalyticsProtocol",
+                    "usr": "s:23InsuideIndoorNavigation17AnalyticsProtocolP"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23InsuideIndoorNavigation0A17MapViewControllerC17delegateAnalyticsAA0H8Protocol_pvg",
+                "mangledName": "$s23InsuideIndoorNavigation0A17MapViewControllerC17delegateAnalyticsAA0H8Protocol_pvg",
+                "moduleName": "InsuideIndoorNavigation",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnalyticsProtocol",
+                    "printedName": "any InsuideIndoorNavigation.AnalyticsProtocol",
+                    "usr": "s:23InsuideIndoorNavigation17AnalyticsProtocolP"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23InsuideIndoorNavigation0A17MapViewControllerC17delegateAnalyticsAA0H8Protocol_pvs",
+                "mangledName": "$s23InsuideIndoorNavigation0A17MapViewControllerC17delegateAnalyticsAA0H8Protocol_pvs",
+                "moduleName": "InsuideIndoorNavigation",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23InsuideIndoorNavigation0A17MapViewControllerC17delegateAnalyticsAA0H8Protocol_pvM",
+                "mangledName": "$s23InsuideIndoorNavigation0A17MapViewControllerC17delegateAnalyticsAA0H8Protocol_pvM",
+                "moduleName": "InsuideIndoorNavigation",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(airportCode:delegateAnalytics:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "InsuideMapViewController",
+                "printedName": "InsuideIndoorNavigation.InsuideMapViewController",
+                "usr": "c:@M@InsuideIndoorNavigation@objc(cs)InsuideMapViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AnalyticsProtocol",
+                "printedName": "any InsuideIndoorNavigation.AnalyticsProtocol",
+                "usr": "s:23InsuideIndoorNavigation17AnalyticsProtocolP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:23InsuideIndoorNavigation0A17MapViewControllerC11airportCode17delegateAnalyticsACSS_AA0J8Protocol_ptcfc",
+            "mangledName": "$s23InsuideIndoorNavigation0A17MapViewControllerC11airportCode17delegateAnalyticsACSS_AA0J8Protocol_ptcfc",
+            "moduleName": "InsuideIndoorNavigation",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "viewDidLoad",
+            "printedName": "viewDidLoad()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@InsuideIndoorNavigation@objc(cs)InsuideMapViewController(im)viewDidLoad",
+            "mangledName": "$s23InsuideIndoorNavigation0A17MapViewControllerC11viewDidLoadyyF",
+            "moduleName": "InsuideIndoorNavigation",
+            "overriding": true,
+            "objc_name": "viewDidLoad",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(nibName:bundle:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "InsuideMapViewController",
+                "printedName": "InsuideIndoorNavigation.InsuideMapViewController",
+                "usr": "c:@M@InsuideIndoorNavigation@objc(cs)InsuideMapViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Bundle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bundle",
+                    "printedName": "Foundation.Bundle",
+                    "usr": "c:objc(cs)NSBundle"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@InsuideIndoorNavigation@objc(cs)InsuideMapViewController(im)initWithNibName:bundle:",
+            "mangledName": "$s23InsuideIndoorNavigation0A17MapViewControllerC7nibName6bundleACSSSg_So8NSBundleCSgtcfc",
+            "moduleName": "InsuideIndoorNavigation",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithNibName:bundle:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@InsuideIndoorNavigation@objc(cs)InsuideMapViewController",
+        "mangledName": "$s23InsuideIndoorNavigation0A17MapViewControllerC",
+        "moduleName": "InsuideIndoorNavigation",
+        "declAttributes": [
+          "Custom",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UIViewController",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "UIKit.UIViewController",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "InsuideIndoorNavigation"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "InsuideIndoorNavigation"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "InsuideIndoorNavigation",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "IndoorAtlas",
+        "printedName": "IndoorAtlas",
+        "declKind": "Import",
+        "moduleName": "InsuideIndoorNavigation"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "InsuideIndoorManagerDelegate",
+        "printedName": "InsuideIndoorManagerDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "indoorInsuideLocationManager",
+            "printedName": "indoorInsuideLocationManager(_:didUpdateLocations:locationAccuracy:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@InsuideIndoorNavigation@objc(pl)InsuideIndoorManagerDelegate(im)indoorInsuideLocationManager:didUpdateLocations:locationAccuracy:",
+            "mangledName": "$s23InsuideIndoorNavigation0aB15ManagerDelegateP06indoora8LocationD0_18didUpdateLocations16locationAccuracyySi_SayypGSftF",
+            "moduleName": "InsuideIndoorNavigation",
+            "genericSig": "<τ_0_0 where τ_0_0 : InsuideIndoorNavigation.InsuideIndoorManagerDelegate>",
+            "sugared_genericSig": "<Self where Self : InsuideIndoorNavigation.InsuideIndoorManagerDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "indoorInsuideLocatioManager",
+            "printedName": "indoorInsuideLocatioManager(didupateHeading:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@InsuideIndoorNavigation@objc(pl)InsuideIndoorManagerDelegate(im)indoorInsuideLocatioManagerWithDidupateHeading:",
+            "mangledName": "$s23InsuideIndoorNavigation0aB15ManagerDelegateP06indoora7LocatioD015didupateHeadingySd_tF",
+            "moduleName": "InsuideIndoorNavigation",
+            "genericSig": "<τ_0_0 where τ_0_0 : InsuideIndoorNavigation.InsuideIndoorManagerDelegate>",
+            "sugared_genericSig": "<Self where Self : InsuideIndoorNavigation.InsuideIndoorManagerDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didUpdateRoutePoints",
+            "printedName": "didUpdateRoutePoints(route:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IARoute",
+                "printedName": "IndoorAtlas.IARoute",
+                "usr": "c:objc(cs)IARoute"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@InsuideIndoorNavigation@objc(pl)InsuideIndoorManagerDelegate(im)didUpdateRoutePointsWithRoute:",
+            "mangledName": "$s23InsuideIndoorNavigation0aB15ManagerDelegateP20didUpdateRoutePoints5routeySo7IARouteC_tF",
+            "moduleName": "InsuideIndoorNavigation",
+            "genericSig": "<τ_0_0 where τ_0_0 : InsuideIndoorNavigation.InsuideIndoorManagerDelegate>",
+            "sugared_genericSig": "<Self where Self : InsuideIndoorNavigation.InsuideIndoorManagerDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "insuideIndoorShowOnMap",
+            "printedName": "insuideIndoorShowOnMap(poiId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@InsuideIndoorNavigation@objc(pl)InsuideIndoorManagerDelegate(im)insuideIndoorShowOnMapWithPoiId:",
+            "mangledName": "$s23InsuideIndoorNavigation0aB15ManagerDelegateP07insuideB9ShowOnMap5poiIdySS_tF",
+            "moduleName": "InsuideIndoorNavigation",
+            "genericSig": "<τ_0_0 where τ_0_0 : InsuideIndoorNavigation.InsuideIndoorManagerDelegate>",
+            "sugared_genericSig": "<Self where Self : InsuideIndoorNavigation.InsuideIndoorManagerDelegate>",
+            "protocolReq": true,
+            "objc_name": "insuideIndoorShowOnMapWithPoiId:",
+            "declAttributes": [
+              "Optional",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "indoorInsuideLocationManager",
+            "printedName": "indoorInsuideLocationManager(_:didenter:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IALocationManager",
+                "printedName": "IndoorAtlas.IALocationManager",
+                "usr": "c:objc(cs)IALocationManager"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IARegion",
+                "printedName": "IndoorAtlas.IARegion",
+                "usr": "c:objc(cs)IARegion"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@InsuideIndoorNavigation@objc(pl)InsuideIndoorManagerDelegate(im)indoorInsuideLocationManager:didenter:",
+            "mangledName": "$s23InsuideIndoorNavigation0aB15ManagerDelegateP06indoora8LocationD0_8didenterySo010IALocationD0C_So8IARegionCtF",
+            "moduleName": "InsuideIndoorNavigation",
+            "genericSig": "<τ_0_0 where τ_0_0 : InsuideIndoorNavigation.InsuideIndoorManagerDelegate>",
+            "sugared_genericSig": "<Self where Self : InsuideIndoorNavigation.InsuideIndoorManagerDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "indoorInsuideLocationManager",
+            "printedName": "indoorInsuideLocationManager(_:didexit:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IALocationManager",
+                "printedName": "IndoorAtlas.IALocationManager",
+                "usr": "c:objc(cs)IALocationManager"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IARegion",
+                "printedName": "IndoorAtlas.IARegion",
+                "usr": "c:objc(cs)IARegion"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@InsuideIndoorNavigation@objc(pl)InsuideIndoorManagerDelegate(im)indoorInsuideLocationManager:didexit:",
+            "mangledName": "$s23InsuideIndoorNavigation0aB15ManagerDelegateP06indoora8LocationD0_7didexitySo010IALocationD0C_So8IARegionCtF",
+            "moduleName": "InsuideIndoorNavigation",
+            "genericSig": "<τ_0_0 where τ_0_0 : InsuideIndoorNavigation.InsuideIndoorManagerDelegate>",
+            "sugared_genericSig": "<Self where Self : InsuideIndoorNavigation.InsuideIndoorManagerDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@InsuideIndoorNavigation@objc(pl)InsuideIndoorManagerDelegate",
+        "mangledName": "$s23InsuideIndoorNavigation0aB15ManagerDelegateP",
+        "moduleName": "InsuideIndoorNavigation",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "InsuideIndoorManager",
+        "printedName": "InsuideIndoorManager",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "delegete",
+            "printedName": "delegete",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "(any InsuideIndoorNavigation.InsuideIndoorManagerDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InsuideIndoorManagerDelegate",
+                    "printedName": "any InsuideIndoorNavigation.InsuideIndoorManagerDelegate",
+                    "usr": "c:@M@InsuideIndoorNavigation@objc(pl)InsuideIndoorManagerDelegate"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23InsuideIndoorNavigation0aB7ManagerC8delegeteAA0abD8Delegate_pSgvp",
+            "mangledName": "$s23InsuideIndoorNavigation0aB7ManagerC8delegeteAA0abD8Delegate_pSgvp",
+            "moduleName": "InsuideIndoorNavigation",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ImplicitlyUnwrappedOptional",
+                    "printedName": "(any InsuideIndoorNavigation.InsuideIndoorManagerDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "InsuideIndoorManagerDelegate",
+                        "printedName": "any InsuideIndoorNavigation.InsuideIndoorManagerDelegate",
+                        "usr": "c:@M@InsuideIndoorNavigation@objc(pl)InsuideIndoorManagerDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23InsuideIndoorNavigation0aB7ManagerC8delegeteAA0abD8Delegate_pSgvg",
+                "mangledName": "$s23InsuideIndoorNavigation0aB7ManagerC8delegeteAA0abD8Delegate_pSgvg",
+                "moduleName": "InsuideIndoorNavigation",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ImplicitlyUnwrappedOptional",
+                    "printedName": "(any InsuideIndoorNavigation.InsuideIndoorManagerDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "InsuideIndoorManagerDelegate",
+                        "printedName": "any InsuideIndoorNavigation.InsuideIndoorManagerDelegate",
+                        "usr": "c:@M@InsuideIndoorNavigation@objc(pl)InsuideIndoorManagerDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23InsuideIndoorNavigation0aB7ManagerC8delegeteAA0abD8Delegate_pSgvs",
+                "mangledName": "$s23InsuideIndoorNavigation0aB7ManagerC8delegeteAA0abD8Delegate_pSgvs",
+                "moduleName": "InsuideIndoorNavigation",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23InsuideIndoorNavigation0aB7ManagerC8delegeteAA0abD8Delegate_pSgvM",
+                "mangledName": "$s23InsuideIndoorNavigation0aB7ManagerC8delegeteAA0abD8Delegate_pSgvM",
+                "moduleName": "InsuideIndoorNavigation",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "InsuideIndoorManager",
+                "printedName": "InsuideIndoorNavigation.InsuideIndoorManager",
+                "usr": "c:@M@InsuideIndoorNavigation@objc(cs)InsuideIndoorManager"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23InsuideIndoorNavigation0aB7ManagerC6sharedACvpZ",
+            "mangledName": "$s23InsuideIndoorNavigation0aB7ManagerC6sharedACvpZ",
+            "moduleName": "InsuideIndoorNavigation",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InsuideIndoorManager",
+                    "printedName": "InsuideIndoorNavigation.InsuideIndoorManager",
+                    "usr": "c:@M@InsuideIndoorNavigation@objc(cs)InsuideIndoorManager"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23InsuideIndoorNavigation0aB7ManagerC6sharedACvgZ",
+                "mangledName": "$s23InsuideIndoorNavigation0aB7ManagerC6sharedACvgZ",
+                "moduleName": "InsuideIndoorNavigation",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "authenticationInsuideIndoor",
+            "printedName": "authenticationInsuideIndoor(apiKey:apiSeceret:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23InsuideIndoorNavigation0aB7ManagerC014authenticationaB06apiKey0F7SeceretySS_SStF",
+            "mangledName": "$s23InsuideIndoorNavigation0aB7ManagerC014authenticationaB06apiKey0F7SeceretySS_SStF",
+            "moduleName": "InsuideIndoorNavigation",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "initializeInsuideIndoor",
+            "printedName": "initializeInsuideIndoor()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23InsuideIndoorNavigation0aB7ManagerC010initializeaB0yyF",
+            "mangledName": "$s23InsuideIndoorNavigation0aB7ManagerC010initializeaB0yyF",
+            "moduleName": "InsuideIndoorNavigation",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopLocation",
+            "printedName": "stopLocation()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23InsuideIndoorNavigation0aB7ManagerC12stopLocationyyF",
+            "mangledName": "$s23InsuideIndoorNavigation0aB7ManagerC12stopLocationyyF",
+            "moduleName": "InsuideIndoorNavigation",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "requestBlockFloor",
+            "printedName": "requestBlockFloor(latitude:longitude:floorNumber:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23InsuideIndoorNavigation0aB7ManagerC17requestBlockFloor8latitude9longitude11floorNumberySd_SdSitF",
+            "mangledName": "$s23InsuideIndoorNavigation0aB7ManagerC17requestBlockFloor8latitude9longitude11floorNumberySd_SdSitF",
+            "moduleName": "InsuideIndoorNavigation",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "indoorLocationManager",
+            "printedName": "indoorLocationManager(_:didUpdateLocations:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IALocationManager",
+                "printedName": "IndoorAtlas.IALocationManager",
+                "usr": "c:objc(cs)IALocationManager"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@InsuideIndoorNavigation@objc(cs)InsuideIndoorManager(im)indoorLocationManager:didUpdateLocationsDeprecated:",
+            "mangledName": "$s23InsuideIndoorNavigation0aB7ManagerC014indoorLocationD0_18didUpdateLocationsySo010IALocationD0C_SayypGtF",
+            "moduleName": "InsuideIndoorNavigation",
+            "objc_name": "indoorLocationManager:didUpdateLocationsDeprecated:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "indoorLocationManager",
+            "printedName": "indoorLocationManager(_:didEnter:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IALocationManager",
+                "printedName": "IndoorAtlas.IALocationManager",
+                "usr": "c:objc(cs)IALocationManager"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IARegion",
+                "printedName": "IndoorAtlas.IARegion",
+                "usr": "c:objc(cs)IARegion"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@InsuideIndoorNavigation@objc(cs)InsuideIndoorManager(im)indoorLocationManager:didEnterRegion:",
+            "mangledName": "$s23InsuideIndoorNavigation0aB7ManagerC014indoorLocationD0_8didEnterySo010IALocationD0C_So8IARegionCtF",
+            "moduleName": "InsuideIndoorNavigation",
+            "objc_name": "indoorLocationManager:didEnterRegion:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "indoorLocationManager",
+            "printedName": "indoorLocationManager(_:didExitRegion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IALocationManager",
+                "printedName": "IndoorAtlas.IALocationManager",
+                "usr": "c:objc(cs)IALocationManager"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IARegion",
+                "printedName": "IndoorAtlas.IARegion",
+                "usr": "c:objc(cs)IARegion"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@InsuideIndoorNavigation@objc(cs)InsuideIndoorManager(im)indoorLocationManager:didExitRegion:",
+            "mangledName": "$s23InsuideIndoorNavigation0aB7ManagerC014indoorLocationD0_13didExitRegionySo010IALocationD0C_So8IARegionCtF",
+            "moduleName": "InsuideIndoorNavigation",
+            "objc_name": "indoorLocationManager:didExitRegion:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "indoorLocationManager",
+            "printedName": "indoorLocationManager(_:didUpdate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IALocationManager",
+                "printedName": "IndoorAtlas.IALocationManager",
+                "usr": "c:objc(cs)IALocationManager"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IAHeading",
+                "printedName": "IndoorAtlas.IAHeading",
+                "usr": "c:objc(cs)IAHeading"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@InsuideIndoorNavigation@objc(cs)InsuideIndoorManager(im)indoorLocationManager:didUpdateHeading:",
+            "mangledName": "$s23InsuideIndoorNavigation0aB7ManagerC014indoorLocationD0_9didUpdateySo010IALocationD0C_So9IAHeadingCtF",
+            "moduleName": "InsuideIndoorNavigation",
+            "objc_name": "indoorLocationManager:didUpdateHeading:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchIARoute",
+            "printedName": "fetchIARoute(destinationLat:destinationLng:floor:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23InsuideIndoorNavigation0aB7ManagerC12fetchIARoute14destinationLat0G3Lng5floorySd_SdSitF",
+            "mangledName": "$s23InsuideIndoorNavigation0aB7ManagerC12fetchIARoute14destinationLat0G3Lng5floorySd_SdSitF",
+            "moduleName": "InsuideIndoorNavigation",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "indoorLocationManager",
+            "printedName": "indoorLocationManager(_:didUpdate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IALocationManager",
+                "printedName": "IndoorAtlas.IALocationManager",
+                "usr": "c:objc(cs)IALocationManager"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IARoute",
+                "printedName": "IndoorAtlas.IARoute",
+                "usr": "c:objc(cs)IARoute"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@InsuideIndoorNavigation@objc(cs)InsuideIndoorManager(im)indoorLocationManager:didUpdateRoute:",
+            "mangledName": "$s23InsuideIndoorNavigation0aB7ManagerC014indoorLocationD0_9didUpdateySo010IALocationD0C_So7IARouteCtF",
+            "moduleName": "InsuideIndoorNavigation",
+            "objc_name": "indoorLocationManager:didUpdateRoute:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "insuideShowPoiOnMap",
+            "printedName": "insuideShowPoiOnMap(poiId:floorId:poiLatitude:poiLongitude:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23InsuideIndoorNavigation0aB7ManagerC19insuideShowPoiOnMap5poiId05floorK00J8Latitude0J9LongitudeySS_SiS2dtF",
+            "mangledName": "$s23InsuideIndoorNavigation0aB7ManagerC19insuideShowPoiOnMap5poiId05floorK00J8Latitude0J9LongitudeySS_SiS2dtF",
+            "moduleName": "InsuideIndoorNavigation",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopMonitoringWayFinding",
+            "printedName": "stopMonitoringWayFinding()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23InsuideIndoorNavigation0aB7ManagerC24stopMonitoringWayFindingyyF",
+            "mangledName": "$s23InsuideIndoorNavigation0aB7ManagerC24stopMonitoringWayFindingyyF",
+            "moduleName": "InsuideIndoorNavigation",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "InsuideIndoorManager",
+                "printedName": "InsuideIndoorNavigation.InsuideIndoorManager",
+                "usr": "c:@M@InsuideIndoorNavigation@objc(cs)InsuideIndoorManager"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@InsuideIndoorNavigation@objc(cs)InsuideIndoorManager(im)init",
+            "mangledName": "$s23InsuideIndoorNavigation0aB7ManagerCACycfc",
+            "moduleName": "InsuideIndoorNavigation",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@InsuideIndoorNavigation@objc(cs)InsuideIndoorManager",
+        "mangledName": "$s23InsuideIndoorNavigation0aB7ManagerC",
+        "moduleName": "InsuideIndoorNavigation",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "InsuideIndoorNavigation",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "InsuideIndoorNavigation"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "InsuideIndoorNavigation"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "InsuideIndoorNavigation"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "InsuideIndoorNavigation"
+      },
+      {
+        "kind": "Import",
+        "name": "DeveloperToolsSupport",
+        "printedName": "DeveloperToolsSupport",
+        "declKind": "Import",
+        "moduleName": "InsuideIndoorNavigation"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UIFont",
+        "printedName": "UIFont",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "loadMyFonts",
+            "printedName": "loadMyFonts",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:So6UIFontC23InsuideIndoorNavigationE11loadMyFontsytvpZ",
+            "mangledName": "$sSo6UIFontC23InsuideIndoorNavigationE11loadMyFontsytvpZ",
+            "moduleName": "InsuideIndoorNavigation",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So6UIFontC23InsuideIndoorNavigationE11loadMyFontsytvgZ",
+                "mangledName": "$sSo6UIFontC23InsuideIndoorNavigationE11loadMyFontsytvgZ",
+                "moduleName": "InsuideIndoorNavigation",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)UIFont",
+        "moduleName": "UIKit",
+        "isOpen": true,
+        "intro_iOS": "2.0",
+        "objc_name": "UIFont",
+        "declAttributes": [
+          "Available",
+          "ObjC",
+          "SynthesizedProtocol",
+          "NonSendable",
+          "Sendable",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/juber\/Desktop\/InsuideIndoorNavigation\/InsuideIndoorNavigation\/InsuideMapViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 780,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/juber\/Desktop\/InsuideIndoorNavigation\/InsuideIndoorNavigation\/InsuideMapViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 786,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/juber\/Desktop\/InsuideIndoorNavigation\/InsuideIndoorNavigation\/InsuideMapViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 796,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/juber\/Desktop\/InsuideIndoorNavigation\/InsuideIndoorNavigation\/InsuideMapViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 809,
+      "length": 2,
+      "value": "80"
+    },
+    {
+      "filePath": "\/Users\/juber\/Desktop\/InsuideIndoorNavigation\/InsuideIndoorNavigation\/InsuideMapViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 857,
+      "length": 18,
+      "value": "\"ic_poi_fooddrink\""
+    },
+    {
+      "filePath": "\/Users\/juber\/Desktop\/InsuideIndoorNavigation\/InsuideIndoorNavigation\/InsuideMapViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 995,
+      "length": 17,
+      "value": "\"ic_poi_shopping\""
+    },
+    {
+      "filePath": "\/Users\/juber\/Desktop\/InsuideIndoorNavigation\/InsuideIndoorNavigation\/InsuideMapViewController.swift",
+      "kind": "Array",
+      "offset": 1123,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/juber\/Desktop\/InsuideIndoorNavigation\/InsuideIndoorNavigation\/InsuideMapViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 261,
+      "length": 24,
+      "value": "\"InsuideIndoorNavigation.InsuideMapViewController\""
+    },
+    {
+      "filePath": "\/Users\/juber\/Desktop\/InsuideIndoorNavigation\/InsuideIndoorNavigation\/InsuideMapViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 7238,
+      "length": 6,
+      "value": "\"blue\""
+    },
+    {
+      "filePath": "\/Users\/juber\/Desktop\/InsuideIndoorNavigation\/InsuideIndoorNavigation\/InsuideMapViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 7267,
+      "length": 6,
+      "value": "\"food\""
+    },
+    {
+      "filePath": "\/Users\/juber\/Desktop\/InsuideIndoorNavigation\/InsuideIndoorNavigation\/InsuideMapViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 7300,
+      "length": 10,
+      "value": "\"shopping\""
+    },
+    {
+      "filePath": "\/Users\/juber\/Desktop\/InsuideIndoorNavigation\/InsuideIndoorNavigation\/InsuideMapViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 7337,
+      "length": 10,
+      "value": "\"icon_key\""
+    },
+    {
+      "filePath": "\/Users\/juber\/Desktop\/InsuideIndoorNavigation\/InsuideIndoorNavigation\/InsuideMapViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 7375,
+      "length": 11,
+      "value": "\"title_key\""
+    },
+    {
+      "filePath": "\/Users\/juber\/Desktop\/InsuideIndoorNavigation\/InsuideIndoorNavigation\/InsuideMapViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 7414,
+      "length": 11,
+      "value": "\"source_id\""
+    },
+    {
+      "filePath": "\/Users\/juber\/Desktop\/InsuideIndoorNavigation\/InsuideIndoorNavigation\/InsuideMapViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 7452,
+      "length": 10,
+      "value": "\"layer_id\""
+    },
+    {
+      "filePath": "\/Users\/juber\/Desktop\/InsuideIndoorNavigation\/InsuideIndoorNavigation\/InsuideMapViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 7495,
+      "length": 16,
+      "value": "\"TERRAIN_SOURCE\""
+    },
+    {
+      "filePath": "\/Users\/juber\/Desktop\/InsuideIndoorNavigation\/InsuideIndoorNavigation\/InsuideMapViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 7555,
+      "length": 39,
+      "value": "\"mapbox:\/\/mapbox.mapbox-terrain-dem-v1\""
+    },
+    {
+      "filePath": "\/Users\/juber\/Desktop\/InsuideIndoorNavigation\/InsuideIndoorNavigation\/InsuideMapViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 7629,
+      "length": 18,
+      "value": "\"view_annotation_\""
+    },
+    {
+      "filePath": "\/Users\/juber\/Desktop\/InsuideIndoorNavigation\/InsuideIndoorNavigation\/InsuideMapViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7695,
+      "length": 2,
+      "value": "50"
+    },
+    {
+      "filePath": "\/Users\/juber\/Desktop\/InsuideIndoorNavigation\/InsuideIndoorNavigation\/InsuideMapViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 7727,
+      "length": 5,
+      "value": "\"red\""
+    },
+    {
+      "filePath": "\/Users\/juber\/Desktop\/InsuideIndoorNavigation\/InsuideIndoorNavigation\/InsuideMapViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 7771,
+      "length": 20,
+      "value": "\"icon_blue_property\""
+    },
+    {
+      "filePath": "\/Users\/juber\/Desktop\/InsuideIndoorNavigation\/InsuideIndoorNavigation\/InsuideMapViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 7829,
+      "length": 19,
+      "value": "\"icon_red_property\""
+    },
+    {
+      "filePath": "\/Users\/juber\/Desktop\/InsuideIndoorNavigation\/InsuideIndoorNavigation\/InsuideMapViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 7890,
+      "length": 11,
+      "value": "\"blue_text\""
+    },
+    {
+      "filePath": "\/Users\/juber\/Desktop\/InsuideIndoorNavigation\/InsuideIndoorNavigation\/InsuideMapViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 7937,
+      "length": 10,
+      "value": "\"red_text\""
+    },
+    {
+      "filePath": "\/Users\/juber\/Desktop\/InsuideIndoorNavigation\/InsuideIndoorNavigation\/InsuideMapViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 7980,
+      "length": 16,
+      "value": "\"text_color_key\""
+    },
+    {
+      "filePath": "\/Users\/juber\/Desktop\/InsuideIndoorNavigation\/InsuideIndoorNavigation\/AnnotationView.swift",
+      "kind": "StringLiteral",
+      "offset": 566,
+      "length": 10,
+      "value": "\"Deselect\""
+    },
+    {
+      "filePath": "\/Users\/juber\/Desktop\/InsuideIndoorNavigation\/InsuideIndoorNavigation\/AnnotationView.swift",
+      "kind": "StringLiteral",
+      "offset": 579,
+      "length": 8,
+      "value": "\"Select\""
+    },
+    {
+      "filePath": "\/Users\/juber\/Desktop\/InsuideIndoorNavigation\/InsuideIndoorNavigation\/AnnotationView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 496,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/juber\/Desktop\/InsuideIndoorNavigation\/InsuideIndoorNavigation\/AnnotationView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 856,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/juber\/Desktop\/InsuideIndoorNavigation\/InsuideIndoorNavigation\/AnnotationView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 890,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/juber\/Desktop\/InsuideIndoorNavigation\/InsuideIndoorNavigation\/AnnotationView.swift",
+      "kind": "StringLiteral",
+      "offset": 1080,
+      "length": 3,
+      "value": "\"X\""
+    },
+    {
+      "filePath": "\/Users\/juber\/Desktop\/InsuideIndoorNavigation\/InsuideIndoorNavigation\/AnnotationView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1317,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/juber\/Desktop\/InsuideIndoorNavigation\/InsuideIndoorNavigation\/AnnotationView.swift",
+      "kind": "FloatLiteral",
+      "offset": 1327,
+      "length": 12,
+      "value": "0.4784313725"
+    },
+    {
+      "filePath": "\/Users\/juber\/Desktop\/InsuideIndoorNavigation\/InsuideIndoorNavigation\/AnnotationView.swift",
+      "kind": "FloatLiteral",
+      "offset": 1347,
+      "length": 12,
+      "value": "0.9882352941"
+    },
+    {
+      "filePath": "\/Users\/juber\/Desktop\/InsuideIndoorNavigation\/InsuideIndoorNavigation\/AnnotationView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1368,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/juber\/Desktop\/InsuideIndoorNavigation\/InsuideIndoorNavigation\/AnnotationView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1407,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/juber\/Desktop\/InsuideIndoorNavigation\/InsuideIndoorNavigation\/AnnotationView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1440,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/juber\/Desktop\/InsuideIndoorNavigation\/InsuideIndoorNavigation\/AnnotationView.swift",
+      "kind": "StringLiteral",
+      "offset": 1469,
+      "length": 8,
+      "value": "\"Select\""
+    },
+    {
+      "filePath": "\/Users\/juber\/Desktop\/InsuideIndoorNavigation\/InsuideIndoorNavigation\/RegisterFont\/RegisterFont.swift",
+      "kind": "StringLiteral",
+      "offset": 881,
+      "length": 19,
+      "value": "\"SFPRODISPLAY-bold\""
+    },
+    {
+      "filePath": "\/Users\/juber\/Desktop\/InsuideIndoorNavigation\/InsuideIndoorNavigation\/RegisterFont\/RegisterFont.swift",
+      "kind": "StringLiteral",
+      "offset": 929,
+      "length": 21,
+      "value": "\"SFPRODISPLAY-medium\""
+    },
+    {
+      "filePath": "\/Users\/juber\/Desktop\/InsuideIndoorNavigation\/InsuideIndoorNavigation\/RegisterFont\/RegisterFont.swift",
+      "kind": "StringLiteral",
+      "offset": 979,
+      "length": 22,
+      "value": "\"SFPRODISPLAY-regular\""
+    },
+    {
+      "filePath": "\/Users\/juber\/Desktop\/InsuideIndoorNavigation\/InsuideIndoorNavigation\/RegisterFont\/RegisterFont.swift",
+      "kind": "StringLiteral",
+      "offset": 1033,
+      "length": 25,
+      "value": "\"SFPRODISPLAY-thinitalic\""
+    },
+    {
+      "filePath": "\/Users\/juber\/Desktop\/InsuideIndoorNavigation\/InsuideIndoorNavigation\/RegisterFont\/RegisterFont.swift",
+      "kind": "StringLiteral",
+      "offset": 1089,
+      "length": 29,
+      "value": "\"SFPRODISPLAY-semibolditalic\""
+    },
+    {
+      "filePath": "\/Users\/juber\/Desktop\/InsuideIndoorNavigation\/InsuideIndoorNavigation\/RegisterFont\/RegisterFont.swift",
+      "kind": "StringLiteral",
+      "offset": 1149,
+      "length": 23,
+      "value": "\"SFPRODISPLAY-semibold\""
+    },
+    {
+      "filePath": "\/tmp\/iphoneos\/Build\/Intermediates.noindex\/ArchiveIntermediates\/InsuideIndoorNavigation\/IntermediateBuildFilesPath\/InsuideIndoorNavigation.build\/Release-iphonesimulator\/InsuideIndoorNavigation.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 743,
+      "length": 18,
+      "value": "\"ic_poi_fooddrink\""
+    },
+    {
+      "filePath": "\/tmp\/iphoneos\/Build\/Intermediates.noindex\/ArchiveIntermediates\/InsuideIndoorNavigation\/IntermediateBuildFilesPath\/InsuideIndoorNavigation.build\/Release-iphonesimulator\/InsuideIndoorNavigation.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 899,
+      "length": 17,
+      "value": "\"ic_poi_shopping\""
+    },
+    {
+      "filePath": "\/tmp\/iphoneos\/Build\/Intermediates.noindex\/ArchiveIntermediates\/InsuideIndoorNavigation\/IntermediateBuildFilesPath\/InsuideIndoorNavigation.build\/Release-iphonesimulator\/InsuideIndoorNavigation.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1039,
+      "length": 9,
+      "value": "\"red_pin\""
+    }
+  ]
+}
